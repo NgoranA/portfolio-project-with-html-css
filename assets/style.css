@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --primary-color: #040b14;
+  --secondary-color: #149ddd;
+  --info-color: #383b4b;
+}
+
+main {
+  margin-left: 17em;
+}
+
+.hero {
+  width: auto;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(249, 248, 248);
+}
+
+.dancer {
+  font-size: xx-large;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.side-bar {
+  background-color: var(--primary-color);
+  height: 100vh;
+  width: 17em;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  padding: 1em;
+}
+
+.side-bar img {
+  height: 6.5em;
+  border-radius: 50%;
+  border: 7px solid var(--info-color);
+}
+
+.side-bar .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.side-bar:first-child:has(h3) {
+  color: white;
+}
+
+.side-bar a.brands {
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--info-color);
+  border-radius: 50%;
+  padding: 0.7em 0.8em;
+  font-size: small;
+  transition: background-color 0.7s ease-out 100ms;
+}
+
+.side-bar a.brands:hover {
+  background-color: var(--secondary-color);
+}
+
+.side-bar .brands_div {
+  display: flex;
+  gap: 0.4em;
+}
+
+.side-bar .sections {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding-left: 1em;
+}
+
+.side-bar .sections a {
+  text-decoration: none;
+  color: var(--info-color);
+}
+
+.side-bar .sections a .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+.side-bar .sections a .links i {
+  font-size: larger;
+}
+.side-bar .sections a .links span {
+  margin-left: 1em;
+}
+.side-bar .sections a:nth-of-type(1) {
+  color: white;
+}
